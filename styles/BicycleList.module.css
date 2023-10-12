@@ -1,0 +1,52 @@
+#bicycleListContainer {
+  background-color: darkgray;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bicycleListCards{
+  margin-top: 4em;
+}
+
+.bicycleListCard {
+  background-color: white;
+  margin-bottom: 1em;
+  width: calc(100vw - 2em);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bicycleListCard:hover {
+  background-color: var(--bicycle-theme-dark-contrast);
+  color: var(--bicycle-theme-light);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.bicycleListCard *:nth-child(1) {
+  font-weight: bold;
+  padding-top: .5em;
+}
+
+.bicycleListCard *:nth-last-child(1) {
+  padding-bottom: .5em;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bicycleListCard {
+    margin: 0 auto;
+    width: calc(600px - 2em);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

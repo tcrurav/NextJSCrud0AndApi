@@ -1,3 +1,9 @@
+:root {
+  --bicycle-theme-light: #c2690f;
+  --bicycle-theme-dark: brown;
+  --bicycle-theme-dark-contrast: cornsilk;
+}
+
 html,
 body {
   padding: 0;

@@ -5,11 +5,8 @@ This project is an example using Next.js with a CRUD (except Update) with an API
 This example is about bicyles. Here are some screenshots:
 
 ![Create Project](/screenshots/screenshot-01.png)
-
 ![Create Project](/screenshots/screenshot-02.png)
-
 ![Create Project](/screenshots/screenshot-03.png)
-
 ![Create Project](/screenshots/screenshot-04.png)
 
 ## Prerequisites

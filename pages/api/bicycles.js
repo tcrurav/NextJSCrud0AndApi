@@ -3,6 +3,7 @@
 import {
   createBicycle,
   fetchBicycles,
+  deleteBicycle
 } from "../../services/db/bicycle_service";
 
 const handler = async (req, res) => {
@@ -27,8 +28,8 @@ const handler = async (req, res) => {
         break;
       }
       case "DELETE": {
-        //Do some thing
-        res.status(200).send("We Secured the DELETE API End Point");
+        await deleteBicycle(req.body.id);
+        res.status(200).send(`Bicycle with id=${req.body.id} deleted successfully`);
         break;
       }
       default:

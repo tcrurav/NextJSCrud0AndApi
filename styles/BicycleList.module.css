@@ -8,8 +8,8 @@
   align-items: center;
 }
 
-.bicycleListCards{
-  margin-top: 4em;
+.bicycleListCards {
+  margin-top: 6em;
 }
 
 .bicycleListCard {
@@ -17,6 +17,11 @@
   margin-bottom: 1em;
   width: calc(100vw - 2em);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bicycleListCard:hover {
@@ -25,19 +30,24 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
-.bicycleListCard *:nth-child(1) {
+.bicycleListCard p {
   font-weight: bold;
   padding-top: .5em;
+  margin-left: 2em;
 }
 
-.bicycleListCard *:nth-last-child(1) {
-  padding-bottom: .5em;
+.bicycleListTrashIcon {
+  width: 2em;
+  height: 2em;
+  margin-right: 2em;
+  cursor: pointer;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .bicycleListCard {
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     width: calc(600px - 2em);
   }
 }
